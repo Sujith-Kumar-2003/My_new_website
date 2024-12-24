@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>yourname</title>
+    <title>Sujith Kumaravel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-image: url('Back.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);  /* Reduced opacity (20%) */
+            backdrop-filter: blur(10px);  /* Adds the blur effect for the glass effect */
+            z-index: -1; /* This makes sure the overlay stays behind the content */
+        }
+    </style>
 </head>
+
 <body>
+
     <div id="loading">
         <div id="spinner"></div>
     </div>
@@ -21,7 +45,7 @@
     <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
         <table>
             <tr>
-                <td id="logo">yourname.</td>
+                <td id="logo">Sujith Kumar.</td>
                 <td id="navigation">
                     <a href="#work">work</a>
                     <a href="#bio">about</a>
@@ -35,7 +59,9 @@
         <tr>
             <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
                 <h1>this is where you put your about or tagline</h1>
-                <button class="btn_one">Hire Me</button><br>
+                <a href="resume.pdf" download>
+                    <button class="btn_one">HIRE ME</button>
+                </a>
                 <table>
                     <tr>
                         <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
@@ -50,7 +76,7 @@
         </tr>
     </table>
     <div id="work">
-        <h1>work</h1>
+        <h1>MY PROJECTS</h1>
         <div id="photos">
             <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547922657-b370d1687eb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80">
             <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549375463-8cbc18ca3f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
@@ -112,14 +138,14 @@
                             <input type="text" placeholder="name" required>
                             <input type="email" placeholder="email" required><br>
                             <textarea placeholder="your message" required rows="5"></textarea><br>
-                            <button class="btn_one">send</button>
+                            <button class="btn_one">Send me a message </button>
                         </form> 
                     </td>
                 </tr>
             </table>
     </div>
     <div id="footer">
-        made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+        Made Like Mr.Robot <br> <a href="https://github.com/Sujith-Kumar-2003">Sujith Kumar</a>
     </div>
     <script src="index.js" type="text/javascript"></script>
 </body>
