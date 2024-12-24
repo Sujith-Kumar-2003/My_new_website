@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 #spinner {
-    animation: rotate 0.56s infinite linear;
+    animation: rotate 0.26s infinite linear;
     width:50px;
     height:50px;
     border:12px solid rgb(255, 44, 90);
@@ -66,7 +66,7 @@ header table {
     top:0;
     right:0;
     margin:20px 40px;
-    color:#fff;
+    color:black;
     transition:0.4s ease-in-out;
 }
 #magnify h1:hover{
@@ -82,13 +82,13 @@ header table {
 }
 #logo {
     font-size:24px;
-    color:rgb(255, 44, 90);
+    color:white; /* Changed to white */
 }
 #navigation {
     text-align:right;
 }
 #navigation a {
-    color:inherit;
+    color:white; /* Changed to white */
     text-decoration:none;
     padding:5px 10px;
     border-bottom:2px solid transparent;
@@ -113,10 +113,12 @@ header table {
     justify-content:center;
     text-align:left;
     padding:0px 8%;
+    color:white; /* Changed to white */
 }
 #about h1 {
     font-size:45px;
     word-wrap:break-word;
+    color:white; /* Changed to white */
 }
 #about table {
     width:70%;
@@ -125,9 +127,10 @@ header table {
 #about table tr td {
     width:20% !important;
     text-align:left;
+    color:white; /* Changed to white */
 }
 .social {
-    color:rgb(255, 44, 90);
+    color:white; /* Changed to white */
     font-size:23px;
     padding:12px 17px;
     border-radius:50%;
@@ -136,7 +139,7 @@ header table {
     font-weight:bold;
     margin:0px 8px;
 }
-.social:hover { 
+.social:hover {
     cursor: pointer;
     color:#fff;
     background:rgb(255, 44, 90);
@@ -145,8 +148,8 @@ header table {
 .btn_one {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
-    color:rgb(255, 44, 90);
-    background:#fff;
+    color:white; /* Changed to white */
+    background:black;
     border:3px solid rgb(255, 44, 90);
     padding:8px 40px;
     width:35%;
@@ -172,11 +175,13 @@ header table {
     width:92vw;
     padding:6vh 4vw;
     font-weight:bold;
+    color:white; /* Changed to white */
 }
 #work h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(255, 44, 90);
     width:6%;
+    color:white; /* Changed to white */
 }
 #photos {
     width:100%;
@@ -199,35 +204,42 @@ header table {
     width:92vw;
     padding:6vh 4vw;
     font-weight:bold;
+    color:white; /* Changed to white */
 }
 #bio h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(255, 44, 90);
     width:8%;
+    color:white; /* Changed to white */
 }
 #contact {
     width:92vw;
     padding:6vh 4vw;
+    color:white; /* Changed to white */
 }
 #contact h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(255, 44, 90);
     width:10%;
+    color:white; /* Changed to white */
 }
 #contact table {
     width:100%;
 }
 #contact table tr td {
     width:50%;
+    color:white; /* Changed to white */
 }
 #inner_div table{
     width:100%;
 }
 #inner_div table tr td{
     font-weight:bold;
+    color:white; /* Changed to white */
 }
 #inner_table tr td{
     padding:10px 20px !important;
+    color:white; /* Changed to white */
 }
 #contact form {
     width:100%;
@@ -242,7 +254,7 @@ header table {
     font-family: 'Poppins', sans-serif;
     font-size:18px;
     transition:0.4s ease-in-out;
-    color:#000;
+    color:white; /* Changed to white */
     font-weight:bold;
 }
 #contact form textarea {
@@ -257,7 +269,7 @@ header table {
     background:transparent;
     resize:none;
     transition:0.4s ease-in-out;
-    color:#000;
+    color:white; /* Changed to white */
     font-weight:bold;
 }
 #contact form input:focus {
@@ -267,24 +279,27 @@ header table {
 #contact form textarea:focus {
     outline:none;
     border-bottom:3px solid rgba(255, 44, 90,1);
+    color:white; /* Changed to white */
 }
 #address {
     position:relative;
     top:-25px;
     left:30px;
+    color:white; /* Changed to white */
 }
 #footer {
     width:100%;
     padding:10vh 0px;
     text-align:center;
     font-weight:bold;
+    color:white; /* Changed to white */
 }
 #footer a {
-    color:rgb(255, 44, 90);
+    color:white; /* Changed to white */
     text-decoration:none;
 }
 ::placeholder {
-    color:#000;
+    color:white; /* Changed to white */
 }
 button:focus {
     outline:none;
@@ -294,19 +309,19 @@ button:focus {
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0); 
+    background: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0,0.8); 
+    background: rgba(0, 0, 0,0.8);
 }
 
 @media (max-width: 1000px){
     #photos {
-    columns:1;
-    column-gap:0%;
+        columns:1;
+        column-gap:0%;
     }
     #photos img {
         margin:2% 0px;
@@ -338,14 +353,15 @@ button:focus {
     }
     #about table tr td {
         text-align:center;
+        color:white; /* Changed to white */
     }
     .btn_one {
-    padding:6px 30px;
-    width:60%;
-    margin:4vh auto;
-    box-shadow:0px 10px 20px rgba(255, 44, 90, 0.8);
-    background:rgb(255, 44, 90);
-    color:#fff;
+        padding:6px 30px;
+        width:60%;
+        margin:4vh auto;
+        box-shadow:0px 10px 20px rgba(255, 44, 90, 0.8);
+        background:rgb(255, 44, 90);
+        color:white; /* Changed to white */
     }
     .btn_one:hover {
         box-shadow:0px 10px 40px rgba(255, 44, 90, 0.8);
@@ -354,24 +370,31 @@ button:focus {
     #contact table tr td {
         width:100%;
         display:block;
+        color:white; /* Changed to white */
     }
     #inner_table tr td{
         padding:10px 0px !important;
+        color:white; /* Changed to white */
     }
     #contact form input {
         width:90%;
+        color:white; /* Changed to white */
     }
     #contact form textarea {
         width:90%;
+        color:white; /* Changed to white */
     }
     #work h1 {
         width:19%;
+        color:white; /* Changed to white */
     }
     #bio h1 {
         width:25%;
+        color:white; /* Changed to white */
     }
     #contact h1 {
         width:33%;
+        color:white; /* Changed to white */
     }
     header {
         width:96vw;
@@ -386,6 +409,6 @@ button:focus {
         padding:15px 0px;
     }
     #navigation a {
-        color:#000;
+        color:white; /* Changed to white */
     }
 }
